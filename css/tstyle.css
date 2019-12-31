@@ -1,4 +1,46 @@
 div{
-    display:flex;
-    flex-direction: column;
+ display:flex;
+    flex-direction: column-reverse;
+     margin-left: 30%;
+    
+     justify-content: center;
+}
+ 
+ 
+textarea{
+    width: 50%;
+    height: 20%;
+   
+ padding: 10px  10px  10px  10px;
+    margin: 10px 150px ;
+}
+.btn-outline-danger{
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    margin: 10px 130px ;
+    
+}
+.btn-outline-warning{
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    margin: 10px 130px ;
+     
+}
+.Clear{
+       border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    margin-left: 40%;
+     
+}
+input{
+   height: 50px;
+   width: 230px;
+     
+}
+h2{
+    padding-top: 20px;
+margin-left: 45%;
 }

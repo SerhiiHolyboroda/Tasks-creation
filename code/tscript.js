@@ -15,10 +15,10 @@ const divMaker = text => {
      const butEd = document.createElement('button')
   divs.textContent = text
     divsn = `${div.childNodes.length}`
-    divs.className = `n${div.childNodes.length}`
-    butDel.className = `b${div.childNodes.length}`
-    butEd.className = `d${div.childNodes.length}`
-     let del = divs.className 
+    divs.className = `n${div.childNodes.length}`  
+    butDel.className = `b${div.childNodes.length}` + ' ' + 'btn-outline-danger'
+     butEd.className = `d${div.childNodes.length}` + ' ' +  'btn-outline-warning'
+     let del = divs.className    
      let edt = divs.className  
      
      console.log(del)
@@ -26,6 +26,7 @@ const divMaker = text => {
       
     
   div.appendChild(divs)
+     
     butDel.innerHTML += `${div.childNodes.length}`
     butDel.innerHTML = 'Delete'
      
@@ -60,7 +61,7 @@ const divMaker = text => {
      let parent = document.querySelector('.div')
      let child = document.querySelector(`.${del}`)
      itemsArray.splice( itemsArray.indexOf(`${divs.value}`), 1 );
-     let x = prompt('Add new  Task')
+     let x = prompt('Edit Task')
       child.innerHTML = ''
       divs.innerHTML = ''
      divs.value = `${x}`
@@ -71,7 +72,7 @@ const divMaker = text => {
           let b = itemsArray.indexOf(`${divs.value}`)   
            
           console.log(b)
-        itemsArray.push( `${x}`)
+        itemsArray.unshift( `${x}`)
    localStorage.setItem('items', JSON.stringify(itemsArray))  
       
       
